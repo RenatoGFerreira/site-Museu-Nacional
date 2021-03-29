@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css"> <!--Estilo CSS-->
+    <link rel="stylesheet" href="css/normalize.css"> <!--Normalize-->
     <title>Museu Nacional</title>
 
     <!--[if lt IE 9]>
@@ -32,7 +32,36 @@
             </nav> <!--Fim da Nav-->
 
         </header><!--Fim do Header-->
-        
+        <div id="principal"> <!--Inicio da div Principal-->
+            <div id="conteudo"><!--Inicio da div Conteudo-->
+                <section id="capa">
+                    <img src="../imagens/museu.png" alt="Imagem de Capa, Museu Nacional.">
+
+                </section>
+            </div><!--Fim da div Conteudo-->
+            <aside> <!--Inicio Aside -->
+                <section id="depoimento">
+                    <img src="../imagens/depoimento.png" alt="Depoimento. Museu Nacional criado em 1922, é um dos mais importantes museus do Brasil, reunindo um acervo de mais de 250.000 itens. Direção do museu">
+                </section>
+                <section id="visita">
+                    <h4>Faça uma visita</h4>
+                    <form>
+                        <fieldset>
+                          <!--  <legend>Selecione uma data</legend> -->
+
+                            <label for="data">Data</label>
+                            <input class="campo" type="date" id="data"> 
+
+                            <label for="qtd">Qtd Pessoas</label>
+                            <input class="campo" style="width: 31px;" type="number" id="qtd" value="1">
+
+                        </fieldset>
+                        <input class="botao" type="submit" value="Verificar Disponibilidade">
+                    </form>
+                </section>
+            </aside><!--Fim Aside -->
+
+        </div> <!--Fim da div Principal-->
     </div><!--Fim do Container-->
     
 </body>
